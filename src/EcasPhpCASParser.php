@@ -8,6 +8,7 @@ namespace EcasPhpCASParser {
      * @license GPL https://www.gnu.org/licenses/gpl.txt
      * @link https://github.com/ec-europa/ecas-phpcas-parser
      */
+    use phpCAS;
     class EcasPhpCASParser
     {
         /**
