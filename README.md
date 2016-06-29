@@ -63,13 +63,25 @@ array (size=21)
 ```
 ## Installation
 
+Add  to your composer.json (Until and if https://github.com/Jasig/phpCAS/pull/205 gets merged).
+```json
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gboddin/phpCAS"
+        }
+    ]
 ```
+
+```sh
+composer require jasig/phpcas:attribute-parser-callback
 composer require ec-europa/ecas-phpcas-parser:dev-master
+
 ```
 
 ## Usage
 
-```
+```php
 //config the client client as usual
 phpCAS::client(
     constant($config['cas.version']),
@@ -90,7 +102,7 @@ phpCAS::setCasAttributeParserCallback(
 ```
 
 ## ECAS auth success XML example :
-```
+```xml
 <cas:authenticationSuccess>
 	<cas:user>gboddin</cas:user>
 	<cas:groups number="2">
