@@ -1,0 +1,26 @@
+{
+    "name": "ec-europa/ecas-phpcas-parser",
+    "description": "phpCAS attribute parser for ECAS",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "EcasPhpCASParser\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gboddin/phpCAS"
+        }
+    ],
+    "require": {
+        "jasig/phpcas": "dev-attribute-parser-callback"
+    },
+    "license": "EUPL",
+    "authors": [
+        {
+            "name": "Gregory Boddin",
+            "email": "gregory@siwhine.net"
+        }
+    ]
+}

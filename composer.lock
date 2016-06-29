@@ -1,0 +1,77 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ca35bd029b9abbb662e2934c8f9d9751",
+    "content-hash": "6f3b8c34f72b138a0f560c97a10affd6",
+    "packages": [
+        {
+            "name": "jasig/phpcas",
+            "version": "dev-attribute-parser-callback",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gboddin/phpCAS.git",
+                "reference": "fa071d8157505fda343b4c956e013f77107e47af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gboddin/phpCAS/zipball/fa071d8157505fda343b4c956e013f77107e47af",
+                "reference": "fa071d8157505fda343b4c956e013f77107e47af",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "source/"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joachim Fritschi",
+                    "homepage": "https://wiki.jasig.org/display/~fritschi"
+                },
+                {
+                    "name": "Adam Franco",
+                    "homepage": "https://wiki.jasig.org/display/~adamfranco"
+                }
+            ],
+            "description": "Provides a simple API for authenticating users against a CAS server",
+            "homepage": "https://wiki.jasig.org/display/CASC/phpCAS",
+            "keywords": [
+                "cas",
+                "jasig"
+            ],
+            "support": {
+                "source": "https://github.com/gboddin/phpCAS/tree/attribute-parser-callback"
+            },
+            "time": "2016-06-29 17:17:25"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "jasig/phpcas": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
