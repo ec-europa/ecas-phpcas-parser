@@ -55,17 +55,17 @@ namespace EcasPhpCASParser {
                         phpCas::traceBegin();
                         foreach ($child->childNodes as $groupChild) {
                             $result['groups'][]
-                                = $this->attributesParser($groupChild);
+                                = $this->parse($groupChild);
                         }
                         phpCAS::traceEnd('Parsed groups');
                     } elseif (!isset($result[$nodeName])) {
-                        $result[$nodeName] = $this->attributesParser($child);
+                        $result[$nodeName] = $this->parse($child);
                     } else {
                         if (!isset($groups[$nodeName])) {
                             $result[$nodeName] = array($result[$nodeName]);
                             $groups[$nodeName] = 1;
                         }
-                        $result[$nodeName][] = $this->attributesParser($child);
+                        $result[$nodeName][] = $this->parse($child);
                     }
                     phpCAS::traceEnd();
 
