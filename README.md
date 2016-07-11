@@ -63,18 +63,10 @@ array (size=21)
 ```
 ## Installation
 
-Add  to your composer.json (Until and if https://github.com/Jasig/phpCAS/pull/205 gets merged).
-```json
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/gboddin/phpCAS"
-        }
-    ]
-```
+Add  to your composer.json :
 
 ```sh
-composer require jasig/phpcas:attribute-parser-callback
+composer require jasig/phpcas:dev-master
 composer require ec-europa/ecas-phpcas-parser:dev-master
 
 ```

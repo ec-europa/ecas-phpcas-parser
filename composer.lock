@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca35bd029b9abbb662e2934c8f9d9751",
-    "content-hash": "6f3b8c34f72b138a0f560c97a10affd6",
+    "hash": "b0d2c119b48fbf5e04775e8d415897ca",
+    "content-hash": "c27794c08b193708f4d149e70b33a9c8",
     "packages": [
         {
             "name": "jasig/phpcas",
-            "version": "dev-attribute-parser-callback",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gboddin/phpCAS.git",
-                "reference": "fa071d8157505fda343b4c956e013f77107e47af"
+                "url": "https://github.com/Jasig/phpCAS.git",
+                "reference": "23a0b46db6092710e6a37badde6689b7977c3a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gboddin/phpCAS/zipball/fa071d8157505fda343b4c956e013f77107e47af",
-                "reference": "fa071d8157505fda343b4c956e013f77107e47af",
+                "url": "https://api.github.com/repos/Jasig/phpCAS/zipball/23a0b46db6092710e6a37badde6689b7977c3a56",
+                "reference": "23a0b46db6092710e6a37badde6689b7977c3a56",
                 "shasum": ""
             },
             "require": {
@@ -39,6 +39,7 @@
                     "source/"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -58,10 +59,7 @@
                 "cas",
                 "jasig"
             ],
-            "support": {
-                "source": "https://github.com/gboddin/phpCAS/tree/attribute-parser-callback"
-            },
-            "time": "2016-06-29 17:17:25"
+            "time": "2016-07-10 12:56:11"
         }
     ],
     "packages-dev": [],

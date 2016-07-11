@@ -7,14 +7,8 @@
             "EcasPhpCASParser\\": "src"
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/gboddin/phpCAS"
-        }
-    ],
     "require": {
-        "jasig/phpcas": "dev-attribute-parser-callback"
+        "jasig/phpcas": "dev-master"
     },
     "license": "EUPL",
     "authors": [
