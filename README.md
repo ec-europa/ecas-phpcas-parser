@@ -63,11 +63,11 @@ array (size=21)
 ```
 ## Installation
 
-Add  to your composer.json :
+Add  to with composer :
 
 ```sh
 composer require jasig/phpcas:dev-master
-composer require ec-europa/ecas-phpcas-parser:dev-master
+composer require ec-europa/ecas-phpcas-parser:~0.2
 
 ```
 
