@@ -66,8 +66,7 @@ array (size=21)
 Add  to with composer :
 
 ```sh
-composer require jasig/phpcas:dev-master
-composer require ec-europa/ecas-phpcas-parser:~0.2
+composer require ec-europa/ecas-phpcas-parser:~0.3
 
 ```
 
