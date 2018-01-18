@@ -17,7 +17,7 @@ namespace EcasPhpCASParser {
          * @return array Attributes
          * @see \phpCAS
          */
-        public function parse(\DOMElement $root)
+        public static function parse(\DOMElement $root)
         {
             phpCAS::trace('Found attribute '.$root->nodeName);
             $result = array();
@@ -55,17 +55,17 @@ namespace EcasPhpCASParser {
                         phpCas::traceBegin();
                         foreach ($child->childNodes as $groupChild) {
                             $result['groups'][]
-                                = $this->parse($groupChild);
+                                = self::parse($groupChild);
                         }
                         phpCAS::traceEnd('Parsed groups');
                     } elseif (!isset($result[$nodeName])) {
-                        $result[$nodeName] = $this->parse($child);
+                        $result[$nodeName] = self::parse($child);
                     } else {
                         if (!isset($groups[$nodeName])) {
                             $result[$nodeName] = array($result[$nodeName]);
                             $groups[$nodeName] = 1;
                         }
-                        $result[$nodeName][] = $this->parse($child);
+                        $result[$nodeName][] = self::parse($child);
                     }
                     phpCAS::traceEnd();
 
