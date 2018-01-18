@@ -83,12 +83,7 @@ phpCAS::client(
 );
 
 //set the attribute callback 
-phpCAS::setCasAttributeParserCallback(
-    array(
-      new \EcasPhpCASParser\EcasPhpCASParser(),
-      'parse'
-    )
-);
+phpCAS::setCasAttributeParserCallback('\EcasPhpCASParser\EcasPhpCASParser::parse');
 
 ```
 
